@@ -2,7 +2,9 @@
 
 ## Project Description
 
-Here goes your awesome project description!
+A Web Application built using Angular and Java/Spring that allows dynamic scheduling to reduce management overhead!
+
+Deployed: http://team-reston-shift-scheduler.s3-website.us-east-2.amazonaws.com/
 
 ## Technologies Used
 
@@ -21,25 +23,17 @@ Here goes your awesome project description!
 ## Features
 
 List of features ready and TODOs for future development
-* An employee can login 
-* Awesome feature 2
-* Awesome feature 3
+* An employee can login to view their weekly schedule, daily shifts, and assigned tasks. Employees can view announcement board messages posted by managers, send private messages to other users, as well as updating availabilities.
+* A manager can login to view/post new messages on the announcement board, view/edit daily shifts by assignment positions to available employees. Managers can also post a new schedule with updated employee assignments. Lastly, managers also have the ability to send direct messages as well as editing their availabilites.
 
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
 
 ## Getting Started
    
-(include git clone command)
-(include all environment setup steps)
+Start by cloning the entire repository to your local machine.
 
-> Be sure to include BOTH Windows and Unix command  
-> Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
+Frontend Installation:
+Head to the p2-RESTon-angular directory and find the command "npm install" to install all of the required packages. After all necessary packages have been installed, run the command "ng serve -o" to see the front-end portion of the application.
 
-- All the `code` required to get started
-- Images of what it should look like
+Backend Installation:
+Although there are several ways to deploy the back-end portion of this application, the currently deployed version of the application leverages docker/jenkins. If/when you deploy the back-end, ensure that the front-end API calls (found within the /services folder of the Angular application) are pointing to your deployed URL.
 
-## Usage
-
-> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
